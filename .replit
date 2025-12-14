@@ -32,3 +32,8 @@ outputType = "console"
 [[ports]]
 localPort = 8080
 externalPort = 8080
+
+[deployment]
+deploymentTarget = "vm"
+build = ["go", "build", "-o", "bot", "."]
+run = ["./bot"]
