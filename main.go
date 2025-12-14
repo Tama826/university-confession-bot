@@ -33,5 +33,5 @@ func main() {
         http.HandleFunc("/", webhookHandler)
 
         log.Println("Bot running (webhook mode)")
-        log.Fatal(http.ListenAndServe(":8080", nil))
+        log.Fatal(http.ListenAndServe("0.0.0.0:5000", nil))
 }
